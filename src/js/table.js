@@ -174,7 +174,7 @@ export class RegularTableViewModel {
                 dcidx++;
                 if (!preserve_width) {
                     for (const {td, metadata} of cont_body.tds) {
-                        last_cells.push([cont_head.th || td, cont_head.metadata || metadata]);
+                        last_cells.push([td || cont_head.th, metadata || cont_head.metadata]);
                     }
                 }
 
