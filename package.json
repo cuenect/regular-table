@@ -1,10 +1,10 @@
 {
-    "name": "regular-table",
-    "version": "0.1.5",
+    "name": "@cuenect/regular-table",
+    "version": "0.1.5-cue.1",
     "description": "A regular `<table>`, for an async and virtual data model.",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jpmorganchase/regular-table"
+        "url": "https://github.com/cuenect/regular-table"
     },
     "engines": {
         "node": ">=10.18.1"
