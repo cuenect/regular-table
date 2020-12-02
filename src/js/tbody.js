@@ -42,6 +42,12 @@ export class RegularBodyViewModel extends ViewModel {
         if (val instanceof HTMLElement) {
             td.textContent = "";
             td.appendChild(val);
+        } else if (val instanceof NodeList) {
+            td.textContent = "";
+
+            Array.prototype.forEach.call(val, (node) => {
+                td.appendChild(node.cloneNode(true));
+            });
         } else {
             td.textContent = val;
         }
